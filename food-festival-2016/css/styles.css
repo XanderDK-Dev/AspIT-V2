@@ -33,16 +33,23 @@ div
     justify-content: center;
 }
 
-.nav-links li {
-    margin: 10px;
+.link {
+    transition:all 0.5s ease-out;
     padding: 20px 25px;
 }
 
-.nav-links li:hover
+#white
 {
-    background-color: #97C004;
+    padding: 20px 25px;
+    color: white;
+}
+
+.link:hover
+{
+    background-color: #F8C400;
     color: white;
     cursor: pointer;
+    transition:all 0.5s ease;
 }
 
 #bg-img
@@ -94,10 +101,10 @@ div
     align-items: center;
     margin-top: 70px;
     background-color: #EEEEEE;
-    height: 400px;
+    height: fit-content;
 }
 
-#guest-container h2{
+.category-name{
     font-weight: 300;
     font-size: 40px;
     margin-top: 30px;
@@ -108,14 +115,54 @@ div
     background-color: #D90540;
 }
 
+.yellow
+{
+    background-color: #F3CC02;
+}
+
+.orange
+{
+    background-color: #F4A105;
+}
+
+.green
+{
+    background-color: #97C004;
+}
+
+.red-orange
+{
+    background-color: #F43002;
+}
+
+.guest-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .guest-card
 {
     width: 200px;
 }
 
+.guest-img-container
+{
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+}
+
 .guest-card img:hover
 {
+    transition:all 0.2s ease;
+    translate: -20px -20px;
     width: 120%;
+}
+
+.guest-card img
+{
+    transition:all 0.2s ease;
 }
 
 .top-card
@@ -128,4 +175,275 @@ div
 .guest-desc
 {
     background-color: white;
+}
+
+.guest-name
+{
+    font-weight: 600;
+}
+
+.guest-date
+{
+    font-weight: 100;
+}
+
+.guest-desc-text
+{
+    padding: 12px;
+    width: 200px;
+}
+
+#card-container
+{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#program-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+#program-list-container
+{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.program-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.program-date h2
+{
+    font-size: 35px;
+    font-weight: 100;
+    width: 420px;
+    margin-bottom: 10px;
+}
+
+.program-time h3{
+    width: 50px;
+    margin: 0 15px;
+    font-weight: 200;
+    color: white;
+}
+
+.program-time
+{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+}
+
+.program-text
+{
+    width: 330px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+.program-text h2, .program-text h4
+{
+    font-weight: 400;
+}
+
+.program-text h2
+{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.program-text h4
+{
+    font-size: 13px;
+}
+
+.program-text h2:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#contact
+{
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+#contact-content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 200px;
+    margin-right: 300px;
+}
+
+.contact-name
+{
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+#contact-text
+{
+    width: 100px;
+    margin: 50px;
+    height: fit-content;
+    margin-right: 25px;
+}
+
+.contact-text
+{
+    width: 500px;
+}
+
+#contact-text h2
+{
+    width: 150px;
+}
+
+#contact-ticket h2
+{
+    width: 150px;
+}
+
+#contact-ticket h3
+{
+    width: 500px;
+    height: fit-content;
+}
+
+#contact-ticket
+{
+    margin: 50px;
+    width: 50px;
+    height: fit-content;
+}
+
+.contact-text h2
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact-text h3
+{
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.contact-text h3 b
+{
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.contact-text h3 b:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#ticket
+{
+    border-radius: 25px;
+    padding: 10px 40px;
+    background-color: #799A03;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+#ticket h2{
+    font-weight: 100;
+    letter-spacing: 1.4px;
+}
+
+#ticket:hover
+{
+    cursor: pointer;
+}
+
+#sponsers
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    height: 270px;
+}
+
+#sponsers h2
+{
+    color: #97C004;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+#sponser-list
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
+}
+
+#sponser-list li
+{
+    cursor: pointer;
+}
+
+.img-white
+{
+    background-color: white;
+    padding: 5px 5px 0 5px;
+}
+
+.img-width
+{
+    width: fit-content;
+}
+.img-width img
+{
+    width: 150px;
+}
+
+#arla img
+{
+    width: 100px;
+}
+
+#urte img{
+    width: 70px;
+    padding: 2px 2px 0 2px;
 }

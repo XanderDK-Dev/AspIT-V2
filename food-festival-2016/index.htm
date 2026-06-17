@@ -15,10 +15,10 @@
             <div class="header-content">
                 <nav>
                     <ul class="nav-links">
-                        <li>VELKOMMEN</li>
-                        <li>PROGRAM</li>
-                        <li>OM FESTIVALEN</li>
-                        <li>KONTAKT</li>
+                        <li class="link">VELKOMMEN</li>
+                        <li class="green" id="white">PROGRAM</li>
+                        <li class="link">OM FESTIVALEN</li>
+                        <li class="link">KONTAKT</li>
                     </ul>
                 </nav>
             </div>
@@ -32,17 +32,296 @@
             </div>
         </div>
         <div id="guest-container">
-            <h2>Festivalens gæster</h2>
-            <ul>
-                <li class="guest-card">
+            <h2 class="category-name">Festivalens gæster</h2>
+            <ul id="card-container">
+                <li class="guest-card guest-container">
                     <div class="red guest-card">
                         <h4 class="top-card">LØRDAG</h4>
                     </div>
-                    <img class="guest-card" src="img/guest-mette-blomsterberg.jpg" alt="Gæst Mette Blomsterberg">
-                    <div class="guest-desc guest-card">
-                        <h4>Mette Blomsterberg</h4>
-                        <h4>Lørdag kl. 12:00</h4>
+                    <div class="guest-img-container">
+                        <img class="guest-card" src="img/guest-mette-blomsterberg.jpg" alt="Gæst Mette Blomsterberg">
                     </div>
+                    <div class="guest-desc guest-card">
+                        <div class="guest-desc-text">
+                            <h4 class="guest-name">Mette Blomsterberg</h4>
+                            <h4 class="guest-date">Lørdag kl. 12:00</h4>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="guest-card guest-container">
+                    <div class="yellow guest-card">
+                        <h4 class="top-card">LØRDAG</h4>
+                    </div>
+                    <div class="guest-img-container">
+                        <img class="guest-card" src="img/guest-camilla-plum.jpg" alt="Gæst Camilla Plum">
+                    </div>
+                    <div class="guest-desc guest-card">
+                        <div class="guest-desc-text">
+                            <h4 class="guest-name">Camilla Plum</h4>
+                            <h4 class="guest-date">Lørdag kl. 14:00</h4>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="guest-card guest-container">
+                    <div class="orange guest-card">
+                        <h4 class="top-card">LØRDAG</h4>
+                    </div>
+                    <div class="guest-img-container">
+                        <img class="guest-card" src="img/guest-rene-redzepi.jpg" alt="Gæst Rene Redzepi">
+                    </div>
+                    <div class="guest-desc guest-card">
+                        <div class="guest-desc-text">
+                            <h4 class="guest-name">Rene Redzepi</h4>
+                            <h4 class="guest-date">Lørdag kl. 16:00</h4>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="guest-card guest-container">
+                    <div class="green guest-card">
+                        <h4 class="top-card">LØRDAG</h4>
+                    </div>
+                    <div class="guest-img-container">
+                        <img class="guest-card" src="img/guest-henrik-boserup.jpg" alt="Gæst Henrik Boserup">
+                    </div>
+                    <div class="guest-desc guest-card">
+                        <div class="guest-desc-text">
+                            <h4 class="guest-name">Henrik Boserup</h4>
+                            <h4 class="guest-date">Lørdag kl. 20:00</h4>
+
+                        </div>
+                    </div>
+                </li><li class="guest-card guest-container">
+                    <div class="green guest-card">
+                        <h4 class="top-card">SØNDAG</h4>
+                    </div>
+                    <div class="guest-img-container">
+                        <img class="guest-card" src="img/guest-mik-schack.jpg" alt="Gæst Mik Schack">
+                    </div>
+                    <div class="guest-desc guest-card">
+                        <div class="guest-desc-text">
+                            <h4 class="guest-name">Mik Schack</h4>
+                            <h4 class="guest-date">Søndag kl. 10:00</h4>
+
+                        </div>
+                    </div>
+                </li><li class="guest-card guest-container">
+                    <div class="red guest-card">
+                        <h4 class="top-card">SØNDAG</h4>
+                    </div>
+                    <div class="guest-img-container">
+                        <img class="guest-card" src="img/guest-chili-klaus.jpg" alt="Gæst Chili Klaus">
+                    </div>
+                    <div class="guest-desc guest-card">
+                        <div class="guest-desc-text">
+                            <h4 class="guest-name">Chili-Klaus</h4>
+                            <h4 class="guest-date">Søndag kl. 12:00</h4>
+
+                        </div>
+                    </div>
+                </li><li class="guest-card guest-container">
+                    <div class="yellow guest-card">
+                        <h4 class="top-card">SØNDAG</h4>
+                    </div>
+                    <div class="guest-img-container">
+                        <img class="guest-card" src="img/guest-soren-gericke.jpg" alt="Gæst Søren Gericke">
+                    </div>
+                    <div class="guest-desc guest-card">
+                        <div class="guest-desc-text">
+                            <h4 class="guest-name">Søren Gericke</h4>
+                            <h4 class="guest-date">Søndag kl. 14:00</h4>
+
+                        </div>
+                    </div>
+                </li><li class="guest-card guest-container">
+                    <div class="red-orange guest-card">
+                        <h4 class="top-card">SØNDAG</h4>
+                    </div>
+                    <div class="guest-img-container">
+                        <img class="guest-card" src="img/guest-price.jpg" alt="Gæst Brødrene Price">
+                    </div>
+                    <div class="guest-desc guest-card">
+                        <div class="guest-desc-text">
+                            <h4 class="guest-name">Brødrene Price</h4>
+                            <h4 class="guest-date">Søndag kl. 16:00</h4>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="program-container">
+            <h2 class="category-name">Festivalens program</h2>
+            <ul id="program-list-container">
+                <li class="program-content program-date">
+                    <h2>
+                        Lørdag
+                    </h2>
+                </li>
+                <li class="program-content program-date">
+                    <h2>
+                        Søndag
+                    </h2>
+                </li>
+                <li class="program-content">
+                    <div class="program-time green">
+                        <h3>10:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Officiel åbning af Food Festival</h2>
+                        <h4>Borgmester Anders Andersen byder velkommen</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time green">
+                        <h3>10:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Tilbage til rødderne</h2>
+                        <h4>Ved Mik Schack</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time red">
+                        <h3>12:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Undgå at dit bagværk går i kage</h2>
+                        <h4>Ved Mette Blomsterberg</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time red">
+                        <h3>12:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Det er farven der gør forskellen</h2>
+                        <h4>Ved Chili-Claus med gæst</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time yellow">
+                        <h3>14:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Tips fra den sorte gryde</h2>
+                        <h4>Ved Camilla Plum</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time yellow">
+                        <h3>14:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Meninger om mad</h2>
+                        <h4>Ved Søren Gericke</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time orange">
+                        <h3>16:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Det nordiske køkken</h2>
+                        <h4>Ved Rene Redzepi</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time orange">
+                        <h3>16:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Food Festival mod madspild</h2>
+                        <h4>Ved Selina Juul</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time red-orange">
+                        <h3>18:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Danske ølentusiaster præsenterer</h2>
+                        <h4>Ved Anne Lise Knørr</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time red-orange">
+                        <h3>18:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Pøller på grillen</h2>
+                        <h4>Ved brødrene Prince</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time green">
+                        <h3>20:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Sådan laver du en juicy burger</h2>
+                        <h4>Ved Henrik Boserup</h4>
+                    </div>
+                </li>
+                <li class="program-content">
+                    <div class="program-time green">
+                        <h3>20:00</h3>
+                    </div>
+                    <div class="program-text">
+                        <h2>Officiel afslutning med overraskelse</h2>
+                        <h4>Borgmester Anders Andersen takker af</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="contact" class="green">
+            <h2 class="contact-name">Kontakt eller bestil</h2>
+            <ul id="contact-content">
+                <li  id="contact-text">
+                    <div class="contact-text">
+                        <h2>
+                            Kontakt-info
+                        </h2>
+                        <h3>
+                            Food Festival<br>Økologivej 1<br>1000 Ren By<br>kontakt@food-festival.dk<br>www.food-festival.dk
+                        </h3>
+                    </div>
+                </li>
+                <li id="contact-ticket">
+                    <div class="contact-text">
+                        <h2>
+                            Bestil billet
+                        </h2>
+                        <h3>
+                            Det er gratis at deltage i selve festivalen, men udvalgte arrangementer koster penge.<br>Du kan bestille billet på <b>www.ticketmaster.dk</b> eller her på websitet ved at klikke på knappen "Bestil billet" <br>herunder.
+                        </h3>
+                    </div>
+                </li>
+            </ul>
+            <div id="ticket">
+                <h2>Bestil billet</h2>
+            </div>
+        </div>
+        <div id="sponsers">
+            <h2>Sponsorer</h2>
+            <ul id="sponser-list">
+                <li>
+                    <div class="img-width img-white">
+                        <img src="img/logo-sponsor-thise.png" alt="Thise Mejeri Logo">
+                    </div>
+                </li>
+                <li class="img-width" id="arla">
+                    <img src="img/logo-sponsor-arla.png" alt="Arla Logo">
+                </li>
+                <li class="img-width img-white">
+                    <img src="img/logo-sponsor-okologisk-landsforening.png" alt="Økologisk landsforening Logo">
+                </li>
+                <li class="img-width img-white" id="urte">
+                    <img src="img/logo-sponsor-urtekram.jpg" alt="Økologisk landsforening Logo">
+                </li>
+                <li class="img-width img-white">
+                    <img src="img/logo-sponsor-dansk-kodkvaeg.png" alt="Økologisk landsforening Logo">
                 </li>
             </ul>
         </div>
