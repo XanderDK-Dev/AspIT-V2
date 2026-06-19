@@ -58,7 +58,7 @@
                 <button id="login">
                     <p>Login</p>
                 </button>
-                <button id="sign-up">
+                <button class="blue-btn">
                     <p>Sign Up</p>
                 </button>
             </div>
@@ -69,7 +69,8 @@
             <div id="buy-sell-text">
                 <div id="top-text">
                     <h1>Buy and sell properties in the fastest way</h1>
-                    <p>Explore new apartments, land estates, house and land, home designs, builders, apartments and more.</p>
+                    <p>Explore new apartments, land estates, house and land, home designs, builders, apartments and
+                        more.</p>
                 </div>
                 <div>
                     <ul id="bot-text">
@@ -89,7 +90,51 @@
                 </div>
             </div>
             <div id="hero-img">
-                <img src="img/hero.jpg" alt="Picture of a large mansion with a pool">    
+                <img src="img/hero.jpg" alt="Picture of a large mansion with a pool">
+            </div>
+        </div>
+        <div id="search">
+            <div id="top-bar">
+                <ul class="row">
+                    <li>
+                        <p>Rent</p>
+                    </li>
+                    <li>
+                        <p>Buy</p>
+                    </li>
+                    <li>
+                        <p>Sell</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="bot-bar">
+                <ul class="row">
+                    <li>
+                        <p>Location</p>
+                        <input type="search" placeholder="Dhaka" id="search-bar">
+                    </li>
+                    <li>
+                        <p>Types</p>
+                        <select name="type" id="types">
+                            <option value="apartment">Apartment</option>
+                            <option value="land">Land</option>
+                            <option value="house">House</option>
+                        </select>
+                    </li>
+                    <li>
+                        <p>Budget</p>
+                        <select name="budget" id="budgets">
+                            <option value="average">Average Price</option>
+                            <option value="cheap">Low Price</option>
+                            <option value="expensive">High Price</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button class="blue-btn">
+                            <p>Search Now</p>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
