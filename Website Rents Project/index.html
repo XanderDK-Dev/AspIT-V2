@@ -115,26 +115,205 @@
                     </li>
                     <li>
                         <p>Types</p>
-                        <select name="type" id="types">
-                            <option value="apartment">Apartment</option>
-                            <option value="land">Land</option>
-                            <option value="house">House</option>
-                        </select>
+                        <div class="type-wrapper">
+                            <div class="icon" id="imghouse"></div>
+                            <select name="type" class="types">
+                                <option value="apartment">Apartment</option>
+                                <option value="land">Land</option>
+                                <option value="house">House</option>
+                            </select>
+
+                        </div>
                     </li>
                     <li>
                         <p>Budget</p>
-                        <select name="budget" id="budgets">
-                            <option value="average">Average Price</option>
-                            <option value="cheap">Low Price</option>
-                            <option value="expensive">High Price</option>
-                        </select>
+                        <div class="type-wrapper">
+                            <div class="icon" id="imgmoney"></div>
+                            <select name="budget" class="types">
+                                <option value="average">Average Price</option>
+                                <option value="cheap">Low Price</option>
+                                <option value="expensive">High Price</option>
+                            </select>
+                        </div>
                     </li>
                     <li>
+                        <div>
+                            <p>Budget</p>
+                        </div>
                         <button class="blue-btn">
                             <p>Search Now</p>
                         </button>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div id="popular">
+            <div id="top">
+                <div class="row text">
+                    <div class="blue-line"></div>
+                    <p>POPULAR</p>
+                </div>
+                <div class="row" id="explore">
+                    <p>Explore All</p>
+                    <img src="img/image (4).svg" alt="">
+                </div>
+            </div>
+            <h2>Our Popular Houses</h2>
+            <div>
+                <ul id="house-cards" class="row">
+                    <li class="card-li">
+                        <img src="img/house-01.jpg" alt="An image of a cozy living room">
+                        <p class="company">Company Realty</p>
+                        <div id="bot-card" >
+                            <div class="row" id="top-card">
+                                <p id="grey">$4,600.00</p>
+                                <p id="rent">Rent</p>
+                            </div>
+                            <div>
+                                <p id="expand">Expand Your Development</p>
+                                <div class="row" id="adress">
+                                    <img src="img/map-pin.svg" alt="Icon of a map pin">
+                                    <p>2150 S Jones Blvd, Las Vegas, NV 89146, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="margin-bot">
+                            <div>
+                                <ul class="row" id="room">
+                                    <li class="row" id="fullbot">
+                                        <img src="img/bed.png" alt="Minimalistic icon of a bed">
+                                        <p>2</p>
+                                    </li>
+                                    <li class="row" id="fullbot">
+                                        <img src="img/bathtub.png" alt="Minimalistic icon of a bathtub">
+                                        <p>2</p>
+                                    </li>
+                                    <li class="row" id="fullbot">
+                                        <img src="img/garage-car.png" alt="Minimalistic icon of a garage with a car">
+                                        <p>2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row" id="sqft">
+                                <img src="img/square-target.png" alt="">
+                                <p>32400 Sqft</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-li">
+                        <img src="img/house-02.jpg" alt="An image of a cozy living room">
+                        <p class="company">Company Realty</p>
+                        <div id="bot-card" >
+                            <div class="row" id="top-card">
+                                <p id="grey">$4,600.00</p>
+                                <p id="rent">Rent</p>
+                            </div>
+                            <div>
+                                <p id="expand">Expand Your Development</p>
+                                <div class="row" id="adress">
+                                    <img src="img/map-pin.svg" alt="Icon of a map pin">
+                                    <p>2150 S Jones Blvd, Las Vegas, NV 89146, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="margin-bot">
+                            <div>
+                                <ul class="row" id="room">
+                                    <li class="row" id="fullbot">
+                                        <img src="img/bed.png" alt="Minimalistic icon of a bed">
+                                        <p>2</p>
+                                    </li>
+                                    <li class="row" id="fullbot">
+                                        <img src="img/bathtub.png" alt="Minimalistic icon of a bathtub">
+                                        <p>2</p>
+                                    </li>
+                                    <li class="row" id="fullbot">
+                                        <img src="img/garage-car.png" alt="Minimalistic icon of a garage with a car">
+                                        <p>2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row" id="sqft">
+                                <img src="img/square-target.png" alt="">
+                                <p>32400 Sqft</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card-li">
+                        <img src="img/house-03.jpg" alt="An image of a cozy terrace">
+                        <p class="company">Company Realty</p>
+                        <div id="bot-card" >
+                            <div class="row" id="top-card">
+                                <p id="grey">$4,600.00</p>
+                                <p id="rent">Rent</p>
+                            </div>
+                            <div>
+                                <p id="expand">Expand Your Development</p>
+                                <div class="row" id="adress">
+                                    <img src="img/map-pin.svg" alt="Icon of a map pin">
+                                    <p>2150 S Jones Blvd, Las Vegas, NV 89146, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="margin-bot">
+                            <div>
+                                <ul class="row" id="room">
+                                    <li class="row" id="fullbot">
+                                        <img src="img/bed.png" alt="Minimalistic icon of a bed">
+                                        <p>2</p>
+                                    </li>
+                                    <li class="row" id="fullbot">
+                                        <img src="img/bathtub.png" alt="Minimalistic icon of a bathtub">
+                                        <p>2</p>
+                                    </li>
+                                    <li class="row" id="fullbot">
+                                        <img src="img/garage-car.png" alt="Minimalistic icon of a garage with a car">
+                                        <p>2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row" id="sqft">
+                                <img src="img/square-target.png" alt="">
+                                <p>32400 Sqft</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="imgvid">
+
+            </div>
+            <div id="about-us">
+                <div class="row text">
+                    <div class="blue-line"></div>
+                    <p>ABOUT US</p>
+                </div>
+                <div id="main-text">
+                    <h2>Rents Long-Standing Experience</h2>
+                    <p>A breand-new community featuring sophisticated apartment residences and stylish amenities in one of L.A.'s most energetic locations. From beachside to cityside or poolside to fireside, this is where lifestyle and location are in perfect alignment.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="row" id="points">
+                            <img src="img/check.svg" alt="Checkmark icon">
+                            <p>Choose a Category</p>
+                        </li>
+                        <li class="row" id="points">
+                            <img src="img/check.svg" alt="Checkmark icon">
+                            <p>Choose a Category</p>
+                        </li>
+                        <li class="row" id="points">
+                            <img src="img/check.svg" alt="Checkmark icon">
+                            <p>Choose a Category</p>
+                        </li>
+                        <li class="row" id="points">
+                            <img src="img/check.svg" alt="Checkmark icon">
+                            <p>Choose a Category</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>

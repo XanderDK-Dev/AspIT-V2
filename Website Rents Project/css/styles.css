@@ -38,6 +38,10 @@ ul
 
 #navbar
 {
+    top: 0;
+    position: fixed;
+    z-index: 99;
+    background-color: white;
     height: 100px;
     width: 100%;
     justify-content: space-around;
@@ -109,6 +113,8 @@ ul
 
 #buy-sell
 {    
+    margin-top: 100px;
+    position: relative;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -180,12 +186,17 @@ ul
 
 #search
 {
-    margin-left: 150px;
+    position: relative;
+    z-index: 10;
+    margin-top: -120px; 
+    margin-left: 7%;
+    margin-right: auto;  
+    width: fit-content;
 }
 
 #top-bar
 {
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0px;
     background-color: #F3F4F8;
     width: fit-content;
     height: fit-content;
@@ -199,7 +210,8 @@ ul
 
 #top-bar ul li p
 {
-    padding: 15px 50px;
+    cursor: pointer;
+    padding: 10px 45px;
     color: rgb(51, 51, 51);
     font-size: 1.6rem;
     font-weight: 500;
@@ -207,18 +219,21 @@ ul
 
 #bot-bar
 {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 15px 15px 15px;
+    background-color: white;
     width: fit-content;
     height: fit-content;
     box-shadow: 0 0 15px rgba(116, 116, 116, 0.19);
 }
 
 #bot-bar ul{
+    width: 100%;
     padding: 20px 50px;
-    gap: 50px;
+    gap: 25px;
 }
 
 #search-bar{
+    width: 22vw;
     font-size: 1.2rem;
     background-image: url("../img/map-pin.svg");
     background-repeat: no-repeat;
@@ -234,6 +249,32 @@ ul
 {
     font-size: 1.2rem;
     color: rgb(65, 65, 65);
+
+}
+
+#bot-bar ul li div p
+{
+    color: transparent;
+}
+
+#bot-bar ul li
+{
+    width: 100%;
+}
+
+#bot-bar ul li button p
+{
+    color: white;
+}
+
+#bot-bar ul li button
+{
+    padding: 1px 30px;
+}
+
+#bot-bar ul li button:hover
+{
+    cursor: pointer;
 }
 
 #search-bar::placeholder
@@ -247,10 +288,263 @@ ul
   appearance: none;
 }
 
-#types
+.types
 {
-    padding: 15px 40px 15px 15px;
+    width: 23vw;
+    position: relative;
+    z-index: 0;
+    font-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+    background-size: 20px;
+    padding: 12px 40px 12px 15px;
     border: none;
+    appearance: none;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(116, 116, 116, 0.19);
+    color: #464646;
+}
+
+.type-wrapper {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+}
+
+.icon
+{
+    position: absolute;
+    right: 10px;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 20px;         
+    height: 20px;
+    z-index: 1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    border: none;
+    appearance: none;
+    filter: invert(31%) sepia(73%) saturate(5723%) hue-rotate(233deg) brightness(96%) contrast(89%);
+    color: #464646;
+}
+
+#imghouse
+{
+    background-image: url("../img/image (1).svg");
+}
+
+#imgmoney
+{
+    background-image: url("../img/image (2).svg");
+}
+
+#popular
+{
+    margin-top: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+.blue-line
+{
+    width: 35px;
+    border-radius: 5px;
+    height: 3px;
+    background-color: #4351E9;
+}
+
+.text p
+{
+    color: #4351E9;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+#explore
+{
+    margin-top: 25px;
+}
+
+#explore p
+{
+    font-size: 1rem;
+}
+
+#top
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#popular h2{
+    font-size: 2.5rem;
+    color: #292929;
+}
+
+#house-cards
+{
+    margin: 40px auto 100px auto;
+    gap: 50px;
+}
+
+.card-li
+{
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(116, 116, 116, 0.19);   
+    height: fit-content;
+    width: 510px;
+    overflow: hidden;
+}
+
+.card-li img
+{
+    height: 50%;
+    width: inherit;
+    overflow: hidden;
+}
+
+#rent
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #4351E9;
+    height: 20px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: #EAEDFD;
+    text-align: center;
+}
+
+#grey
+{
+    color: rgb(110, 110, 110);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#top-card
+{
+    gap: 25px;
+}
+
+#bot-card
+{
+    padding: 15px;  
+    border-bottom: 8px solid transparent;
+    box-shadow: inset 0 -1px 0 0 #e9e9e9,  
+                 inset 0 -3px 0 0 #ffffff, 
+                 inset 0 -4px 0 0 #e9e9e9;
+}
+
+
+#expand
+{
+    font-size: 1.7rem;
+}
+
+#adress
+{
+    gap: 5px;
+}
+
+#adress p
+{
+    font-size: 1.1rem;
+    color: rgb(122, 122, 122);
+    font-weight: 500;
+}
+
+#fullbot
+{
+    gap: 8px;
+}
+
+#fullbot p
+{
+    font-size: 1.3rem;
+}
+
+#room
+{
+    gap: 25px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 14%;
+}
+
+#sqft
+{
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 7%;
+}
+
+#sqft p
+{
+    font-size: 1.3rem;
+}
+
+#margin-bot
+{
+    margin-bottom: 8px;
+}
+
+.company
+{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: white;
+    background-color: #4351E9;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+#imgvid
+{
+    width: 50%;
+}
+
+#about-us
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 100px 7% 50px 15%;
+}
+
+
+#main-text h2
+{
+    font-size: 3rem;   
+    color: #3b3b3b;
+    line-height: 3.5rem;
+}
+
+#main-text p
+{
+    font-size: 1.2rem;   
+    color: #5f5f5f;
+    line-height: 1.7rem;
+    margin: 25px 0;
+}
+
+#points
+{
+    gap: 10px;
+    width: fit-content;
+    font-size: 1.2rem;   
+    color: #5f5f5f;
+}
+
+#about-us div ul{
+    flex-wrap: wrap;
+    height: 100px;
 }
