@@ -962,3 +962,53 @@ ul
     color: rgb(58, 58, 58);
     border-radius: 10px;
 }
+
+.mid-blue
+{
+    padding: 50px 7%;
+    background-color: #F5F8FF;
+}
+
+#contact
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact li img
+{
+    width: 200px;  
+}
+
+.big
+{
+    font-size: 1.6rem;
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+}
+.small
+{
+    height: 35px;
+    font-size: 1.1rem;
+    color: rgb(114, 114, 114);
+}
+
+#news
+{
+    padding: 80px 0;
+}
+
+#blue
+{
+    background-color: #4351E9;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+#copyright
+{
+    color: white;
+    font-size: 1rem;
+}
